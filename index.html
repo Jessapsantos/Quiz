@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz para programadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quiz interativo para programadores</h1>
+        <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre esse quiz</h2>
+            <p>Este quiz foi desenvolvido para testar seus conhecimentos em programação, como <em>linguagens de programação</em>, conceitos básicos e mais</p>
+            <!--
+            strong - destacar texto
+            em - colocar mais ênfase na palavra / parecido com itálico <i>
+            -->
+            <p>Você encontrará diferentes tipos de perguntas,incluindo múltipla escolha, texto e perguntas de data.<br>
+                Desafie-se com este quiz!</p>
+            <!--
+            <br> - quebra de texto
+            -->
+            <p>Você poderá encontrar alguns acrônimos como <strong><abbr title="HyperText Markup Language">HTML</abbr></strong> e <strong><abbr title="Cascading Style Sheets">CSS</abbr></strong>, que sãocomumente usados em questões relacionadas ao desenvolvimento web</p>
+            <!--
+            <abbr title=""> - Quando o usuário passa o cursor do mouse sobre a abreviação ou sigla, o atributo title exibe a explicação completa em uma "dica de ferramenta" (tooltip).
+            -->
+        </section>
+        <section>
+            <!--Pergunta 1: mútipla escolha-->
+            <h2>Pergunta 1: Qual linguagem é usada para estruturar página web?</h2>
+            <form action="">
+                <input type="radio" value="Python" id="p1a" name="pergunta1">
+                <label for="p1a">Python</label>
+                <input type="radio" value="HTML" id="p1b" name="pergunta1">
+                <label for="p1b">HTML</label>
+                <input type="radio" value="Javascript" id="p1c" name="pergunta1">
+                <label for="p1c">Javascript</label>
+                <input type="radio" value="Ruby" id="p1d" name="pergunta1">
+                <label for="p1d">Ruby</label>
+            </form>
+            <!--
+            <input type="radio"> → Cria um botão de opção, permitindo ao usuário selecionar uma das alternativas disponíveis.
+
+            value="Python" → Define o valor que será enviado no formulário quando este botão for selecionado.
+
+            id="p1a" → Dá um identificador único ao botão, usado para associá-lo ao <label>.
+
+            name="pergunta1" → Agrupa botões de opção da mesma pergunta. Apenas um deles pode ser selecionado por vez dentro do mesmo grupo (name).
+
+            <label for="p1a">Python</label> → Conecta o rótulo ao botão de opção correspondente, permitindo que o usuário clique no próprio texto "Python" para selecionar a opção. Isso melhora a experiência do usuário e a acessibilidade.
+
+            -->
+        </section>
+        <section>
+            <h2>Pergunta 2: Na URL https://www.google.com trecho "google.com" é o ____."</h2>
+            <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
+            <!--
+            <input type="text"> → Cria um campo de entrada de texto onde o usuário pode digitar qualquer informação.
+
+            id="p2" → Define um identificador único para o campo, útil para associá-lo a um <label> ou manipulá-lo via JavaScript.
+
+            name="pergunta2" → Define um nome para o campo, que será usado ao enviar os dados do formulário.
+
+            placeholder="Digite sua resposta..." → Exibe um texto de instrução dentro do campo antes do usuário digitar algo. Esse texto some assim que o usuário começa a digitar.
+
+            -->
+
+        </section>
+        <section>
+            <h2> Pergunta 3: Escreva um exemplo de senha forte.</h2>
+            <input type="password" id="p3" name="pergunta3" placeholder="Digite uma senha...">
+            <!--type="password" →  -->
+        </section>
+        <section>
+            <h2>Pergunta 4: Em que ano HTML lançou sua primeira versão</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+            <!--
+            <form> → Elemento que define um formulário HTML, onde os usuários podem inserir dados para serem enviados para um servidor.
+
+            <input type="date"> → Cria um campo onde o usuário pode selecionar uma data usando um calendário interativo.
+
+            -->
+        </section>
+        <section>
+            <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="Javascript">
+                <label for="p5a">JavaScript</label>
+                <input type="checkbox" id="p5a" name="pergunta5" value="HTML">
+                <label for="p5a">HTML</label>
+                <input type="checkbox" id="p5a" name="pergunta5" value="Java">
+                <label for="p5a">Java</label>
+                <input type="checkbox" id="p5a" name="pergunta5" value="CSS">
+                <label for="p5a">CSS</label>
+                <!--
+                <input type="checkbox"> → Cria uma caixa de seleção que pode ser marcada ou desmarcada pelo usuário.
+                -->
+            </form>
+        </section>
+        <section>
+            <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+            <form>
+                <input type="file" id="p6" name="pergunta6">
+            </form>
+            <!--
+            <input type="file"> → Cria um botão que permite ao usuário selecionar um arquivo do dispositivo para upload.
+            -->
+        </section>
+        <section>
+            <h2>Pergunta 7: Selecione o atributo do input que define o seu tipo:</h2>
+            <form>
+                <select name="pergunta7" id="p7">
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+            </form>
+        </section>
+        <section>
+            <h2>Pergunta 8: Qual liguagem de programação é representada pelo logotipo abaixo?</h2>
+            <figure>
+                <img src="./assets/Unofficial_JavaScript_logo_2.svg.png" alt="Logotipo de liguagem de programação">
+                <figcaption>Figura 1: Logotipo de uma linguagem de programação</figcaption>
+            </figure>
+            <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+            <!--
+            <figure> → Agrupa a imagem e sua legenda, sendo usado para elementos gráficos como fotos, ilustrações e gráficos.
+
+            <figcaption> → Adiciona uma legenda descritiva para a imagem.
+            -->
+        </section>
+
+        <hr> <!-- hr → divisorio -->
+
+        <section>
+            <h2>Tabela de Pontuação</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Não desista! Cada tentativa é uma oportunidade de você aprender</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Você ainda precisa melhorar. Que tal estudar mais sobre programação?</td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>Bom! Seu conhecimento em programação está satisfatório</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Perfeito! Você está muito bem informado sobre programação</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Boa sorte na próxima! Estude mais para melhorar</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!--
+            <table> → Define uma tabela.
+
+            border="1" → Adiciona uma borda à tabela (melhor estilizar com CSS).
+
+            <thead> → Agrupa o cabeçalho da tabela.
+
+            <tr> → Define uma linha.
+
+            <th> → Define células do cabeçalho (negrito e centralizado por padrão).
+
+            <tbody> → Agrupa o conteúdo principal da tabela.
+
+            <td> → Define uma célula normal dentro da tabela.
+
+            <tfoot> → Define um rodapé para a tabela.
+
+            colspan="2" → Faz a célula ocupar duas colunas, centralizando a mensagem final.
+
+            -->
+        </section>
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique aqui para ver as respostas do quiz</summary>
+                <ol>
+                    <li>HTML</li>
+                    <li>Domínio</li>
+                    <li>Ab23!kao8Anmd#</li>
+                    <li>1991</li>
+                    <li>Javascript, Java</li>
+                    <li>Arquivo deve ter extensão .html</li>
+                    <li>type</li>
+                    <li>Javascript</li>
+                </ol>
+            </details>
+            <!--
+            <details> → Cria um conteúdo oculto que pode ser expandido/collapsado pelo usuário.
+
+            <summary> → Define o título clicável que revela o conteúdo dentro do <details>.
+
+            <ol> → Lista ordenada (numerada) para exibir as respostas.
+
+            <li> → Cada item da lista com uma resposta do quiz.
+
+            -->
+
+        </section>
+
+        <section>
+            <h2>Nos dê o seu feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="nome@seuemailaqui.com"><br>
+                    <label for="comentarios">Comentários:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"
+                        placeholder="Digite seu comentário aqui..."></textarea><br>
+                    <button onclick="alert('FEEDBACK ENVIADO')">Envie</button>
+                </fieldset>
+            </form>
+            <!--
+            <form> → Cria um formulário.
+
+            <fieldset> → Agrupa os campos do formulário dentro de uma borda.
+
+            <legend> → Define um título para o conjunto de campos dentro do <fieldset>.
+
+            <label> → Define um rótulo para um campo de entrada.
+
+            <input type="text"> → Campo de entrada para texto.
+
+            <input type="email"> → Campo de entrada específico para emails, garantindo a validação automática.
+
+            <textarea> → Cria um campo de texto maior para comentários.
+
+            <button onclick="alert('FEEDBACK ENVIADO')"> → Cria um botão que exibe um alerta ao ser pressionado.
+            
+            -->
+        </section>
+    </main>
+    <footer>
+        <p class="paragrafo-footer">&copy Quiz de programadores. Todos os direitos reservados</p>
+        <p class="paragrafo-footer">Para conhecer mais sobre mim <a href="sobremim.html" target="_blank">clique aqui</a></p>
+
+        <!--
+        <a> → Define um link (âncora). Ele é usado para redirecionar o usuário para outra página ou recurso.
+
+        href="sobremim.html" → Especifica o endereço do destino do link. Nesse caso, o link leva para a página sobremim.html.
+
+        target="_blank" → Faz com que o link seja aberto em uma nova aba ou janela do navegador, ao invés de substituir a página atual.
+
+        Texto "clique aqui" → O texto visível que o usuário vê e pode clicar.
+        
+        -->
+    </footer>
+
+</body>
+
+</html>

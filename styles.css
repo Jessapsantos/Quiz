@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --background: #d6c0db;
+    --primary: #291135;       
+    --secondary: #563564;   
+    --tertiary: #815d91;
+    --accent: #a98ab6;
+    --font-principal: "Courier Prime", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--tertiary);
+    font-family: var(--font-principal);
+    font-weight: 400;
+}
+
+abbr {
+    text-decoration: none;       
+}
+
+header {
+    padding: 2em;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em ;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 1.2em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: var(--accent);
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+    width: 20%;
+    padding: 0.6em;
+    border: 2px solid var(--accent);
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+input::placeholder {
+    font-family: var(--font-principal);
+    color: var(--accent);
+}
+
+input[type="date"] {   
+    font-size: 15px;      
+    color: var(--primary);
+    font-family: var(--font-principal); 
+    cursor: pointer;               
+  }
+  
+  input[type="file"] {
+    font-family: var(--font-principal);
+    color: var(--secondary);
+  }
+
+select {
+    cursor: pointer;
+    background-color: var(--background);
+    color: var(--secondary);
+    border-radius: 5px;
+    padding: 0.6em;
+    outline: none;
+    border: 1px solid var(--accent);
+}
+
+img {
+    width: 5em;
+}
+
+hr {
+    border: 1px solid var(--accent);
+}
+
+table {
+    width: 55%;
+    border-collapse: collapse;
+    border: var(--primary);   
+}
+
+th {
+    background-color: var(--accent);
+    color: var(--secondary);
+    padding: 1em;
+}
+
+td {
+    padding: 1em;
+    text-align: center;
+}
+
+tfoot td {
+    color: var(--secondary);
+}
+
+ details {
+    background-color: var(--accent);
+    width: 31%;
+    padding: 1em;
+    border-radius: 5px;
+ }
+
+ summary {
+    color: var(--primary);
+    cursor: pointer;
+ }
+
+ol {
+    margin-top: 0.9em;
+    margin-left: 1.9em;
+    color: var(--secondary);
+}
+
+ ol li {
+    padding: 0.2em;
+ }
+
+
+
+ fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--accent);
+    border-radius: 5px;
+    padding: 1em;
+    
+ }
+
+ legend {
+    color: var(--secondary);
+    padding: 0 0.5em;
+ }
+
+ textarea {
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    border-radius: 5px;
+    padding: 0.6em;
+    width: 20%;
+    outline: none;
+ }
+
+ textarea::placeholder {
+    color: var(--accent);
+ }
+
+ button {
+    background-color: var(--accent);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    width: 7%;
+    font-family: var(--font-principal);
+    color: var(--primary);
+ }
+
+ footer {
+    background-color: var(--primary);
+    padding: 2em;
+    text-align: center;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: var(--accent);
+ }
+
+ @media screen and (max-width: 430px) {
+    input[type="text"], input[type="password"], input[type="email"] {
+        width: 100%;
+    }
+
+    input[type="date"] {
+        width: 40%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    details {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    button {
+        width: 30%;
+    }
+
+    .paragrafo-footer {
+        font-size: 0.7em;
+    }
+
+ }
