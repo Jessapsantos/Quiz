@@ -29,6 +29,5 @@ Criei esse quiz tanto pra praticar quanto pra servir como **referência pessoal*
 
 ## 🖼️ Prévia do projeto
 
-📸 *Em breve uma imagem aqui mostrando como ficou!*
+![Demonstração do Quiz](./assets/Gravando%202025-04-10%2014134999.gif)
 
-![Preview do projeto](./assets/Gravando 2025-04-10 14134999.gif)
